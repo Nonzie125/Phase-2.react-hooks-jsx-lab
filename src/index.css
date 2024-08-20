@@ -7,6 +7,10 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px;
 }
 
 h1,
@@ -17,6 +21,7 @@ h5,
 h6 {
   font-family: "Playfair Display", serif;
   margin-bottom: 1em;
+  color: #2c3e50;
 }
 
 nav {
@@ -24,23 +29,27 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  background-color: #34495e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 0.5rem 2rem;
 }
 
 nav a {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   margin: 0 1rem;
   text-decoration: none;
   font-size: 1.2em;
-  color: firebrick;
-  border-bottom: 2px solid firebrick;
-  transition: 0.1s;
+  color: #ecf0f1;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
 }
 
 nav a:hover,
 nav a:active {
-  color: tomato;
-  border-bottom: 2px solid tomato;
+  color: #e74c3c;
+  border-bottom: 2px solid #e74c3c;
 }
 
 #home,
@@ -50,15 +59,24 @@ nav a:active {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 50vh;
+  height: 100vh;
   min-height: 400px;
-  padding: 1rem;
+  padding: 2rem;
+  transition: background-color 0.3s;
 }
 
 #home {
-  background-color: cornsilk;
+  background-color: #ffeaa7;
 }
 
-#about img {
-  max-height: 50%;
+#home:hover {
+  background-color: #fdcb6e;
+}
+
+#about {
+  background-color: #74b9ff;
+}
+
+#about:hover {
+  background-color: #0984e3;
 }
